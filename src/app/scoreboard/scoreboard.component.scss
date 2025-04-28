@@ -23,15 +23,15 @@
   align-items: flex-start;
   gap: 8px;
   position: absolute;
-  top: 546px;
+  top: 510px;
   left: 19px;
 }
 
 .scoreboard-header-container {
   display: flex;
-  height: 64px;
+  height: 92px;
   align-items: flex-start;
-  gap: 32px;
+  gap: 0px;
   position: relative;
   align-self: stretch;
   width: 100%;
@@ -45,15 +45,9 @@
   flex: 1;
   align-self: stretch;
   flex-grow: 1;
-  border-radius: 8px;
+  border-radius: 0px;
   overflow: visible;
-  background: linear-gradient(
-    90deg,
-    rgba(15, 25, 35, 0.65) 0%,
-    rgba(15, 25, 35, 0.53) 53%,
-    rgba(15, 25, 35, 0) 75%,
-    rgba(15, 25, 35, 0) 100%
-  );
+  background-color: rgba(15, 25, 35, 0.90);
 }
 
 .money-spent-container {
@@ -146,7 +140,7 @@
   gap: 10px;
   padding: 13px 16px;
   background-color: #0f1923cc;
-  border-radius: 8px;
+  border-radius: 0px;
   overflow: hidden;
   position: relative;
   flex: 0 0 auto;

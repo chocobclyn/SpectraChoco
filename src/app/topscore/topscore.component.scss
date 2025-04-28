@@ -33,11 +33,27 @@
   position: relative;
 }
 
+// .teamcard-border {
+//   @extend .teamcard;
+//   height: 62.76px;
+//   overflow: hidden;
+//   border-radius: 30px;
+// }
+
 .teamcard-border {
-  @extend .teamcard;
   height: 62.76px;
+  background-color: #1e2530; /* or your desired background */
+  clip-path: polygon(
+    15px 0%,        /* top-left inward */
+    calc(100% - 15px) 0%,  /* top-right inward */
+    100% 50%,       /* right point */
+    calc(100% - 15px) 100%, 
+    15px 100%, 
+    0% 50%          /* left point */
+  );
+  display: flex;
+  align-items: center;
   overflow: hidden;
-  border-radius: 8px;
 }
 
 .teaminfo-container {
@@ -100,7 +116,7 @@
 .divider {
   position: relative;
   align-self: stretch;
-  width: 3.62px;
+  width: 7px;
   &.defender {
     @extend .divider;
     background-color: var(--defender-color-secondary);
@@ -185,9 +201,9 @@
 .mapwin-line {
   display: inline-flex;
   justify-content: center;
-  gap: 5px;
+  gap: 2px;
   position: absolute;
-  top: 110%;
+  top: 105%;
   min-width: 32%;
   &-left {
     @extend .mapwin-line;
@@ -201,14 +217,14 @@
 
 .mapwin-pip {
   position: relative;
-  width: 14px;
-  height: 7px;
-  border-radius: 3px;
-  border: 1.75px solid;
+  width: 5px;
+  height: 10px;
+  border-radius: 2px;
+  border: 1px solid;
   border-color: #ffffffaa;
   &-full {
     @extend .mapwin-pip;
-    background-color: #ffffff;
+    background-color: #ffecb7;
   }
 }
 

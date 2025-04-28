@@ -4,7 +4,7 @@
   position: absolute;
   top: 0;
   left: 4px;
-  border-radius: 0px 0px 8px 8px;
+  border-radius: 0px 0px 0px 0px;
   overflow: hidden;
   &-right {
     @extend .topinfo-container;
@@ -39,7 +39,7 @@
   font-family: Montserrat, Helvetica;
   font-weight: 800;
   color: #ffffff;
-  font-size: 14px;
+  font-size: 6px;
   font-style: normal;
   text-align: center;
   text-transform: uppercase;

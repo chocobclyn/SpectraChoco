@@ -5,11 +5,11 @@
   gap: 4px;
   padding: 0px 4px;
   position: relative;
-  align-self: stretch;
+  //align-self: stretch;
   background-color: #0f1923cc;
-  border-radius: 6px;
+  border-radius: 0px;
   box-shadow: inset 34px 0px 24.7px -8px #0f1923;
-  top: -400px;
+  top: 40px;
 }
 
 .left-team {
@@ -164,7 +164,7 @@
 
 .line {
   position: relative;
-  width: 1px;
+  width: 2px;
   height: 40px;
   object-fit: cover;
 }

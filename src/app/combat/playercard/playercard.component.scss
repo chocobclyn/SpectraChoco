@@ -41,7 +41,7 @@
   padding: 0px 0px 4px 18px;
   display: flex;
   flex-direction: column;
-  width: 186px;
+  width: 120px;
   height: 74px;
   justify-content: flex-end;
   gap: 4px;
@@ -84,7 +84,7 @@
   display: inline-flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
   position: relative;
   flex: 0 0 auto;
 }
@@ -107,6 +107,7 @@
 }
 
 .spike-icon-wrapper {
+  z-index: 999;
   position: relative;
   align-items: center;
   display: inline-flex;
@@ -122,7 +123,7 @@
 }
 
 .ultimate-tracker {
-  width: 60%;
+  width: 80%;
   display: inline-flex;
   align-items: center;
   gap: 1px;
@@ -133,9 +134,9 @@
 
 .pip-ultimate {
   position: relative;
-  width: 10px;
-  height: 10px;
-  margin-right: -2px;
+  width: 20px;
+  height: 20px;
+  //margin-right: -2px;
   background-image: url(/assets/misc/ultimate-pip.svg);
   background-size: 100% 100%;
 
@@ -182,8 +183,9 @@
   height: 76px;
   align-items: flex-start;
   justify-content: flex-end;
+  top: 0px;
   gap: 4px;
-  padding: 0px 0px 2px 32px;
+  padding: 0px 0px 2px 40px;
   position: relative;
 
   &.defender {
@@ -228,15 +230,16 @@
 
 .spectator-icon-container {
   position: absolute;
-  top: 0;
+  top: 2px;
+  right: 5px;
   width: 18px;
   height: 20px;
-  right: 3px;
 }
 
 .spectator-icon {
   width: 18px;
   aspect-ratio: 1;
+  filter: drop-shadow(1px 1px 4px #686868);
 }
 
 .info-container {
@@ -249,8 +252,8 @@
   align-self: stretch;
   width: 100%;
   flex: 0 0 auto;
-  top: -4px;
-  left: 5px;
+  top: 16px;
+  left: 0px;
 
   &.minimal {
     @extend .info-container;
@@ -271,6 +274,8 @@
   width: 17px;
   position: relative;
   flex: 0 0 auto;
+  bottom: 20px;
+  right: -20px;
 }
 
 .currency-container {
@@ -301,12 +306,12 @@
   position: relative;
   width: fit-content;
   margin-top: -1px;
-  opacity: 0.8;
+  opacity: 0.9;
   font-family: "Montserrat", Helvetica;
   font-weight: 700;
   font-size: 11px;
   text-align: center;
-  letter-spacing: 0;
+  letter-spacing: 1px;
   line-height: normal;
   white-space: nowrap;
 
@@ -330,15 +335,18 @@
 }
 
 .username-title {
+  text-transform: uppercase;
   position: relative;
   width: fit-content;
   font-family: "Montserrat", Helvetica;
   font-weight: 600;
+  text-shadow: 1px 1px #686868;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 0;
   line-height: normal;
   white-space: nowrap;
+  bottom: 75px;
 
   &.minimal {
     @extend .username-title;
@@ -409,10 +417,11 @@ app-shield-icon {
 }
 
 .health-bar {
+  z-index: -1;
   position: absolute;
-  height: 3px;
+  height: 20px;
   left: 0;
-  bottom: 0;
+  bottom: 58px;
   transition: width 0.2s ease-out;
 
   &.attacker {

@@ -64,7 +64,7 @@
 .playerinfo-container {
   display: inline-flex;
   align-items: center;
-  gap: 16px;
+  gap: 10px;
   position: relative;
   align-self: stretch;
   flex: 0 0 auto;
@@ -95,6 +95,7 @@
   font-family: "Montserrat", Helvetica;
   font-weight: 600;
   color: #ffffff;
+  text-shadow: 1px 1px #6e6e6e;
   font-size: 16px;
   text-align: center;
   letter-spacing: 0;
@@ -125,12 +126,20 @@
 }
 
 .ultimate-tracker {
-  display: inline-flex;
-  align-items: center;
-  gap: 1.25px;
-  position: relative;
-  flex: 0 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1px;
+  max-width: calc((10px + 1px) * 4); /* assuming each pip is 8px wide */
+  justify-content: center; /* center last row too */
 }
+
+// .ultimate-tracker {
+//   display: inline-flex;
+//   align-items: center;
+//   gap: 1.25px;
+//   position: relative;
+//   flex: 0 0 auto;
+// }
 
 .pip-ultimate {
   position: relative;
